@@ -1,0 +1,14 @@
+%YAML 1.1
+---
+pipeline:
+  build:
+    commands:
+      - apk --no-cache add coreutils g++ make python3 util-linux
+      - node --version
+      - npm --version
+      - cp --verbose .npmrc $HOME/
+      - npm install
+      - NODE_ENV=production npm run-script build
+      - npm run-script version
+      - npm run-script lint
+    image: node:18.7-alpine
