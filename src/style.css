@@ -1,0 +1,56 @@
+/*-------------------------------------------- ghislain.bernard@gmail.com --------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Roboto+Serif');
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Roboto');
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Roboto+Mono');
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+* {
+  @apply box-border;
+}
+
+html {
+  @apply box-border select-none;
+  @apply font-sans;
+}
+
+body {
+  @apply bg-slate-300;
+  @apply m-0 min-h-screen;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply m-0 text-gray-900;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+
+.avatar {
+  @apply flex items-center justify-center;
+  @apply fixed top-4 right-4 h-20 w-20 hover:h-40 hover:w-40 rounded-lg;
+  @apply bg-slate-200;
+  @apply duration-500;
+}
+
+.avatar .picture {
+  @apply h-16 w-16 border-[1rem] rounded-full;
+  @apply overflow-hidden;
+}
+
+.avatar .picture img {
+  @apply h-full w-full;
+}
+
+/*-------------------------------------------- ghislain.bernard@gmail.com --------------------------------------------*/
