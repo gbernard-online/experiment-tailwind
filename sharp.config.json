@@ -1,0 +1,13 @@
+{
+  "avif": {
+    "effort": 6,
+    "quality": 80
+  },
+  "png": {
+    "compressionLevel": 6
+  },
+  "webp": {
+    "effort": 6,
+    "lossless": true
+  }
+}
